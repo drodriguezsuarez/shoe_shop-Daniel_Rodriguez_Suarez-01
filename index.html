@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Daniel Rodriguez S. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Daniel Rodriguez 10</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css.css">
+</head>
+<body>
+    <div class="container" id='app'>
+      <form>
+            <div class="form-group">
+              <label><strong>Hours worked in the day:</strong></label>
+              <input type="number" v-model="hoursworked" class="form-control">  
+            </div>
+            <div class="form-group">
+              <label><strong>Quantity of assembled shoes:</strong></label>
+              <input type="number" v-model="shoes" class="form-control">  
+            </div>           
+            <button type="button" v-on:click="Calculate" class="btn btn-danger">Calculate salary</button> 
+          </form>
+          <h3>Total to pay:</h3>
+          <h5 v-text="total" class="text-mute"></h5>
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
